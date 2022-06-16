@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="shortcut icon" href="../imagens/logo_simbolo.png" type="image/x-icon">
+	<title>Dark Souls</title>
+
+	<link rel="stylesheet" type="text/css" href="../plugins/magnific-popup.css">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.js"></script>
+
+
+	<script>
+        $(document).ready(function () {
+
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+	<main>
+		
+        <header id="cabecalho">
+			<img src="../imagens/logo_branca.png" id="logo">
+			<nav id="menu">
+				<ul>
+					<li><a href="../index.html" class="icon-home">Home</a></li>
+					<li><a href="historia.html" class="icon-book">História</a></li>
+					<li><a href="https://dark-souls-remastered.softonic.com.br/" target="_blank" class="icon-pencil">Download</a></li>
+					<li><a href="#" target="#" class="icon-suitcase">Guia em Geral</a>
+						<ul>
+							<li><a href="classes.html" >Classes</a></li>
+							<li><a href="chefes.html" >Chefes</a></li>
+							<li><a href="galeria.html" >Galeria</a></li>
+						</ul>
+					</li>
+					<li><a href="https://www.bandainamcoent.com/games/dark-souls-remastered#editions" target="_blank" class="icon-mail">Página Oficial</a></li>
+				</ul>
+
+			</nav>
+		</header>
+
+		<section id="conteudo">
+
+					<h2>Wallpapers</h2>
+
+					<div id="galeria-fotos">
+						<a href="../imagens/galeria/1.jpg" title=""><img src="../imagens/galeria/1.jpg"
+							alt=""></a>
+
+						<a href="../imagens/galeria/2.jpg" title=""><img src="../imagens/galeria/2.jpg"
+							alt=""></a>
+
+						<a href="../imagens/galeria/3.jpg" title=""><img src="../imagens/galeria/3.jpg"
+							alt=""></a>
+
+						<a href="../imagens/galeria/4.jpg" title=""><img src="../imagens/galeria/4.jpg"
+							alt=""></a>
+
+						<a href="../imagens/galeria/5.jpg" title=""><img src="../imagens/galeria/5.jpg"
+							alt=""></a>
+
+						<a href="../imagens/galeria/6.jpg" title=""><img src="../imagens/galeria/6.jpg"
+							alt=""></a>
+
+						<a href="../imagens/galeria/7.jpg" title=""><img src="../imagens/galeria/7.jpg"
+							alt=""></a>
+
+						<a href="../imagens/galeria/8.jpg" title=""><img src="../imagens/galeria/8.jpg"
+							alt=""></a>
+
+						<a href="../imagens/galeria/9.jpg" title=""><img src="../imagens/galeria/9.jpg"
+						alt=""></a>
+					</div>
+
+		</section>
+			
+
+		<footer id="rodape">
+			<address> 
+				<p>© Bandai Namco Entertainment America Inc. Todos os conteúdos, marcas, nomes e logotipos de terceiros são usados</p>
+				     <p>sob licença e permanecem propriedade de seus respectivos proprietários. Todos os direitos reservados.</p>
+				
+			</address>
+
+		</footer>
+
+	</main>
+
+</body>
+
+</html>
